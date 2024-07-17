@@ -50,8 +50,6 @@ class DriverCreationFormTest(FormTestSetupMixin, TestCase):
                 "last_name": "Driver",
             }
         )
-        if not form.is_valid():
-            print(form.errors)
         self.assertTrue(form.is_valid())
 
     def test_driver_creation_form_invalid_license_number(self):
